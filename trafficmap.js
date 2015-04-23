@@ -3,7 +3,7 @@ function initialize() {
   var mapOptions = {
     zoom: 13,
     center: myLatlng,
-    MapTypeId: google.maps.MapTypeId.SATELLITE
+    MapTypeId: google.maps.MapTypeId.TERRAIN
   }
 
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
