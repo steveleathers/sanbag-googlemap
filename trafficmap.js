@@ -9,6 +9,12 @@ function initialize() {
 
   var trafficLayer = new google.maps.TrafficLayer();
   trafficLayer.setMap(map);
+
+  var sanbagPoints = new google.maps.KmlLayer({
+    url: 'sanbagPoints.kml'
+  });
+  sanbagPoints.setMap(map);
+}
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
