@@ -10,8 +10,8 @@ function initialize() {
     url: 'sanbagPoints.kml'
   });
   sanbagPoints.setMap(map);
-  var trafficLayer = new google.maps.TrafficLayer();
-  trafficLayer.setMap(map);
+  // var trafficLayer = new google.maps.TrafficLayer();
+  // trafficLayer.setMap(map);
 
 }
 
