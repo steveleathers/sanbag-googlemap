@@ -14,7 +14,7 @@ function initialize() {
     url: 'sanbagPoints.kml'
   });
   sanbagPoints.setMap(map);
-}
+
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
