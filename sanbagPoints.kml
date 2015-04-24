@@ -33,6 +33,36 @@
 			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
 		</Pair>
 	</StyleMap>
+	<StyleMap id="msn_pin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_pin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_pin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_pin">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>C:/Users/sleathers/Downloads/pin.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_pin">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>C:/Users/sleathers/Downloads/pin.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
 	<Folder>
 		<name>My Places</name>
 		<open>1</open>
@@ -83,7 +113,7 @@
 				<range>46717.19179235433</range>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<styleUrl>#msn_pin</styleUrl>
 			<Point>
 				<gx:drawOrder>1</gx:drawOrder>
 				<coordinates>-117.5456546129722,34.06863907928798,0</coordinates>
@@ -102,7 +132,7 @@
 				<range>46717.19179235445</range>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<styleUrl>#msn_pin</styleUrl>
 			<Point>
 				<gx:drawOrder>1</gx:drawOrder>
 				<coordinates>-117.4959001896293,34.13611449237181,0</coordinates>
