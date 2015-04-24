@@ -1,7 +1,7 @@
 function initialize() {
   var myLatlng = new google.maps.LatLng(34.214537, -117.463741);
   var mapOptions = {
-    zoom: 12,
+    zoom: 11,
     center: myLatlng,
     MapTypeId: google.maps.MapTypeId.TERRAIN,
     scrollwheel: false
