@@ -12,7 +12,7 @@ function initialize() {
   var trafficLayer = new google.maps.TrafficLayer();
   trafficLayer.setMap(map);
   var sanbagPoints = new google.maps.KmlLayer({
-    url: 'http://steveleathers.github.io/sanbag-googlemap/sanbagPoints.kml'
+    url: 'http://steveleathers.github.io/sanbag-googlemap/sanbagPoints.kmz'
   });
   sanbagPoints.setMap(map);
 }
