@@ -5,7 +5,7 @@ function initialize() {
     center: myLatlng,
     MapTypeId: google.maps.MapTypeId.TERRAIN,
     scrollwheel: false,
-    MapTypeControlStyle: DROPDOWN_MENU
+    MapTypeControlStyle: 'DROPDOWN_MENU'
   }
 
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
