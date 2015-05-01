@@ -16,6 +16,10 @@ function initialize() {
     url: 'http://steveleathers.github.io/sanbag-googlemap/sanbagPoints.kmz'
   });
   sanbagPoints.setMap(map);
+
+  
+  map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(
+  document.getElementById('legend'));
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
