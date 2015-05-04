@@ -5,7 +5,7 @@ function initialize() {
     center: myLatlng,
     MapTypeId: google.maps.MapTypeId.ROADMAP,
     scrollwheel: false,
-    MapTypeControlStyle: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+    preserveViewport: true
   }
 
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
