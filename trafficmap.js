@@ -3,7 +3,7 @@ function initialize() {
   var mapOptions = {
     zoom: 10,
     center: myLatlng,
-    MapTypeId: google.maps.MapTypeId.TERRAIN,
+    MapTypeId: google.maps.MapTypeId.ROADMAP,
     scrollwheel: false,
     MapTypeControlStyle: google.maps.MapTypeControlStyle.DROPDOWN_MENU
   }
@@ -22,7 +22,7 @@ function initialize() {
 
   map.controls[google.maps.ControlPosition.RIGHT_TOP].push(
   document.getElementById('legend'));
-  
+
   layers['layer_0']['layer'].setMap(map);
   layers['layer_1']['layer'].setMap(map);
 
