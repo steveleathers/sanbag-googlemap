@@ -20,6 +20,9 @@ function initialize() {
     }
   };
 
+  map.controls[google.maps.ControlPosition.RIGHT_TOP].push(
+  document.getElementById('legend'));
+  
   layers['layer_0']['layer'].setMap(map);
   layers['layer_1']['layer'].setMap(map);
 
@@ -51,8 +54,7 @@ function initialize() {
     toggleLayer('layer_1');
   } );
 
-  map.controls[google.maps.ControlPosition.RIGHT_TOP].push(
-  document.getElementById('legend'));
+
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
