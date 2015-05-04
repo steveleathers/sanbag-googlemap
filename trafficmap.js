@@ -19,18 +19,15 @@ function initialize() {
       "label" : "Sanbag Points"
     }
   };
-  var sanbagPoints = new google.maps.KmlLayer({
-    url: 'http://steveleathers.github.io/sanbag-googlemap/sanbagPoints.kmz'
-  });
 
   layers['layer_0']['layer'].setMap(map);
   layers['layer_1']['layer'].setMap(map);
 
-  layers['layer_10']['layer'].toggleState = 1;
-  layers['layer_11']['layer'].toggleState = 1;
+  layers['layer_0']['layer'].toggleState = 1;
+  layers['layer_1']['layer'].toggleState = 1;
 
-  $('#layer-9-header').addClass('on');
-  $('#layer-10-header').addClass('on');
+  $('#layer-0-header').addClass('on');
+  $('#layer-1-header').addClass('on');
 
   function toggleLayer(i) {
     layer = layers[i]['layer'];
