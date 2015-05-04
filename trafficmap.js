@@ -18,6 +18,7 @@ function initialize() {
       "layer" : new google.maps.KmlLayer(url_1),
       "label" : "Sanbag Points"
     }
+  }
   var sanbagPoints = new google.maps.KmlLayer({
     url: 'http://steveleathers.github.io/sanbag-googlemap/sanbagPoints.kmz'
   });
