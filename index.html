@@ -13,10 +13,12 @@
       #legend {
         background: white;
         padding: 10px;
-        opacity: 0.75;
+        opacity: 0.95;
         margin: 20px;
       }
+      .info-layer{
 
+      }
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script src="trafficmap.js"></script>
@@ -24,6 +26,7 @@
   <body>
     <div id="map-canvas"></div>
     <div id="legend"><strong>Legend</strong><br /><br />
+      <p style="margin-left:15px; font-style:italic; color:#999; font-size:90%; margin-top:10px;">Toggle layers using the checkboxes</p>
       <a class="info-layer" data-layer-id="0" href="#"><img src="traffic-icon.png" width="24px"></a>&nbsp; Live Traffic layer<br />
       <a class="info-layer" data-layer-id="1" href="#"><img src="pin.png" width="24px"></a>&nbsp; Sanbag Point<br /><br /></div>
 
