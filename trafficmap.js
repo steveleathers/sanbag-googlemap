@@ -18,7 +18,7 @@ function initialize() {
   sanbagPoints.setMap(map);
 
   
-  map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(
+  map.controls[google.maps.ControlPosition.RIGHT_TOP].push(
   document.getElementById('legend'));
 }
 
