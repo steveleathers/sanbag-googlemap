@@ -15,7 +15,7 @@ function initialize() {
       "layer" :  new google.maps.TrafficLayer(),
       "label" : "Live Traffic"},
     "layer_1": {
-      "layer" : new google.maps.KmlLayer(url_1, {preserveViewport: true}),
+      "layer" : new google.maps.KmlLayer(url_1),
       "label" : "Sanbag Points"
     }
   };
