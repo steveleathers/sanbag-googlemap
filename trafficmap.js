@@ -11,9 +11,6 @@ function initialize() {
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
   var url_1 = "http://steveleathers.github.io/sanbag-googlemap/sanbagPoints.kmz";
   var layers = {
-    "layer_0": {
-      "layer" :  new google.maps.TrafficLayer(),
-      "label" : "Live Traffic"},
     "layer_1": {
       "layer" : new google.maps.KmlLayer(url_1),
       "label" : "Sanbag Points"
@@ -23,13 +20,10 @@ function initialize() {
   map.controls[google.maps.ControlPosition.RIGHT_TOP].push(
   document.getElementById('legend'));
 
-  layers['layer_0']['layer'].setMap(map);
   layers['layer_1']['layer'].setMap(map);
 
-  layers['layer_0']['layer'].toggleState = 1;
   layers['layer_1']['layer'].toggleState = 1;
 
-  $('#layer-0-header').addClass('on');
   $('#layer-1-header').addClass('on');
 
   function toggleLayer(i) {
@@ -44,10 +38,6 @@ function initialize() {
     }
   }
 
-  $('#layer-0-header').click( function() {
-    $('#layer-0-header').toggleClass('on');
-    toggleLayer('layer_0');
-  } );
 
   $('#layer-1-header').click( function() {
     $('#layer-1-header').toggleClass('on');
