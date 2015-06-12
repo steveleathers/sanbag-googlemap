@@ -5,7 +5,7 @@ function initialize() {
     center: myLatlng,
     MapTypeId: google.maps.MapTypeId.ROADMAP,
     scrollwheel: false,
-    preserveViewport: false
+    preserveViewport: true
   }
 
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
@@ -13,7 +13,8 @@ function initialize() {
   var layers = {
     "layer_1": {
       "layer" : new google.maps.KmlLayer(url_1),
-      "label" : "Sanbag Points"
+      "label" : "Sanbag Points",
+      preserveViewport: true
     }
   };
 
