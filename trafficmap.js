@@ -20,11 +20,11 @@ function initialize() {
   map.controls[google.maps.ControlPosition.RIGHT_TOP].push(
   document.getElementById('legend'));
 
-  layers['layer_1']['layer'].setMap(null);
+  layers['layer_1']['layer'].setMap(map);
 
-  layers['layer_1']['layer'].toggleState = 0;
+  layers['layer_1']['layer'].toggleState = 1;
 
-  $('#layer-1-header').addClass('off');
+  $('#layer-1-header').addClass('on');
 
   function toggleLayer(i) {
     layer = layers[i]['layer'];
