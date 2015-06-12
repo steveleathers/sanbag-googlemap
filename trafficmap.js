@@ -14,7 +14,8 @@ function initialize() {
     "layer_1": {
       "layer" : new google.maps.KmlLayer(url_1),
       "label" : "Sanbag Points",
-      preserveViewport: true
+      preserveViewport: true,
+      map: map
     }
   };
 
