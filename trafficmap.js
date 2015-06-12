@@ -7,13 +7,29 @@ function initialize() {
     scrollwheel: false,
     preserveViewport: true
   }
+
+ 
+
+
+
+
+
+
+
+
+
   var layerOptions = {preserveViewport: true};
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-  var url_1 = "http://steveleathers.github.io/sanbag-googlemap/sanbagPoints.kmz";
+  var url_1 = "http://stage-sanbag.migwebtech.com/files/managed/Document/157/layer1.kmz";
+  var url_2 = "http://stage-sanbag.migwebtech.com/files/managed/Document/158/layer2.kmz";
   var layers = {
-    "layer_1": {
-      "layer" : new google.maps.KmlLayer(url_1, layerOptions),
-      "label" : "Sanbag Points"
+     "layer_1": {
+       "layer" : new google.maps.KmlLayer(url_1, layerOptions),
+       "label" : "Construction Projects"
+     },
+     "layer_2": {
+       "layer" : new google.maps.KmlLayer(url_2, layerOptions),
+        "label" : "Briefings"
     }
   };
 
