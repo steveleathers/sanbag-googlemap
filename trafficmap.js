@@ -24,7 +24,7 @@ function initialize() {
 
   layers['layer_1']['layer'].toggleState = 0;
 
-  $('#layer-1-header').addClass('on');
+  $('#layer-1-header').addClass('off');
 
   function toggleLayer(i) {
     layer = layers[i]['layer'];
