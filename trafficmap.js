@@ -5,7 +5,7 @@ function initialize() {
     center: myLatlng,
     MapTypeId: google.maps.MapTypeId.ROADMAP,
     scrollwheel: false,
-    preserveViewport: true
+    preserveViewport: false
   }
 
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
