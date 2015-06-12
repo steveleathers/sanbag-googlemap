@@ -7,15 +7,13 @@ function initialize() {
     scrollwheel: false,
     preserveViewport: true
   }
-
+  var layerOptions = {preserveViewport: true};
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
   var url_1 = "http://steveleathers.github.io/sanbag-googlemap/sanbagPoints.kmz";
   var layers = {
     "layer_1": {
-      "layer" : new google.maps.KmlLayer(url_1),
-      "label" : "Sanbag Points",
-      preserveViewport: true,
-      map: map
+      "layer" : new google.maps.KmlLayer(url_1, layerOptions),
+      "label" : "Sanbag Points"
     }
   };
 
