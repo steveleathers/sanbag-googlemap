@@ -20,7 +20,7 @@ function initialize() {
   map.controls[google.maps.ControlPosition.RIGHT_TOP].push(
   document.getElementById('legend'));
 
-  layers['layer_1']['layer'].setMap(NULL);
+  layers['layer_1']['layer'].setMap(null);
 
   layers['layer_1']['layer'].toggleState = 0;
 
